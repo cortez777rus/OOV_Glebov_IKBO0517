@@ -26,7 +26,7 @@ callback2 = lambda x: print("call2: " + x)
 bus.subscribe("first", callback1)
 bus.subscribe("first", callback2)
 bus.subscribe("second", callback1)
-bus.subscribe("first", callback2)
+bus.subscribe("second", callback2)
 
 bus.publish("first", "event1")
 bus.publish("second", "event2")
